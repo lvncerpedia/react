@@ -43,8 +43,8 @@ const props = { name: "太郎", age: 20 };
 
 **⑤ 分割代入（props受け取り）**
 ```jsx
-// よくある書き方
-const MyComponent = ({ title, onClick }) => {
+const MyComponent = (props) => {
+  const { title, onClick } = props;
   return <button onClick={onClick}>{title}</button>;
 };
 ```
